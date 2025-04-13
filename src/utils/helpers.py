@@ -44,3 +44,4 @@ def guardar_en_txt(datos, ruta_destino, nombre_archivo="hogares_unificados.txt")
         writer.writerows(datos)
 
     print(f"✅ Archivo TXT guardado en: {ruta_completa}")
+
