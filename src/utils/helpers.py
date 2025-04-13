@@ -35,12 +35,12 @@ def procesar_archivos(ruta, tipo="hogar"):
 
     return [cabecera] + datos_unificados if cabecera else []
 
-def guardar_en_csv(datos, ruta_destino, nombre_archivo="hogares_unificados.csv"):
+def guardar_en_txt(datos, ruta_destino, nombre_archivo="hogares_unificados.txt"):
     ruta_completa = os.path.join(ruta_destino, nombre_archivo)
     os.makedirs(ruta_destino, exist_ok=True)
 
-    with open(ruta_completa, mode='w', encoding='utf-8', newline='') as archivo_csv:
-        writer = csv.writer(archivo_csv, delimiter=";")
+    with open(ruta_completa, mode='w', encoding='utf-8', newline='') as archivo_txt:
+        writer = csv.writer(archivo_txt, delimiter=";")
         writer.writerows(datos)
 
-    print(f"✅ Archivo CSV guardado en: {ruta_completa}")
+    print(f"✅ Archivo TXT guardado en: {ruta_completa}")
