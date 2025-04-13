@@ -45,3 +45,13 @@ def guardar_en_txt(datos, ruta_destino, nombre_archivo="hogares_unificados.txt")
 
     print(f"✅ Archivo TXT guardado en: {ruta_completa}")
 
+def add_columns_header(header, *args):
+    """
+    Agrega columnas a una lista.
+
+    Args:
+    :param header: Lista a la que se le agregarán las columnas.
+    :param *args: Columnas a agregar.
+    """
+
+    header.extend(args)
