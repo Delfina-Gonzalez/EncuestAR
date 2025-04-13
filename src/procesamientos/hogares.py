@@ -115,7 +115,7 @@ def clasificar_hogar_habitabilidad(agua, origen_agua, baño, ubi_baño, tipo_ba�
         return "Saludable"
     else:
         return "Buena"
-    
+
 def proceso_hogar_fila(fila):        
     #7. Se debe generar una nueva columna llamada TIPO_HOGAR en funcion de la cant hab
     fila['TIPO_HOGAR']=clasificar_hogar_hab(fila['IX_TOT'])
